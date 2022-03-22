@@ -1,0 +1,13 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div>
+    @{
+    WebApplication.Demo tp = new WebApplication.Demo();
+    }
+
+    <p>@tp.Name</p>
+</div>
