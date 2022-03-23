@@ -1,5 +1,8 @@
 pipeline{
     agent {label 'ubuntu'}
+    parameters{ 
+        string(name: Name, default: 'tapender')
+    }
     stages{
       stage ('build-docker') {
          steps{
